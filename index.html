@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#282828" />
+    <title>GreyMatter</title>
+    <meta name="author" content="GreyMatter">
+    <meta name="description" content="Nyasha Allen 'GreyMatter' Zivanai">
+    <meta name="keywords" content="GreyMatter, software development, cyber security, web design, projects">
+    <!-- FAVICON FILES -->
+    <link href="favicon_io\android-chrome-192x192.png" rel="android-chrome" sizes="192x192">
+    <link href="favicon_io\android-chrome-512x512.png" rel="android-chrome" sizes="512x512">
+    <link href="favicon_io\favicon-16x16.png" rel="apple-touch-icon" sizes="16x16">
+    <link href="favicon_io\favicon-32x32.png" rel="apple-touch-icon" sizes="32x32">
+    <link href="favicon_io\apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="favicon_io\favicon.ico" rel="shortcut icon">
+    <!-- CSS FILES -->
+
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <!--SOME BLOCKING JS -->
+    <script>
+    !function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define("Typewriter",[],t):"object"==typeof exports?exports.Typewriter=t():e.Typewriter=t()}("undefined"!=typeof self?self:this,(function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=3)}([,function(e,t,n){(function(t){for(var r=n(11),o="undefined"==typeof window?t:window,i=["moz","webkit"],a="AnimationFrame",s=o["request"+a],u=o["cancel"+a]||o["cancelRequest"+a],c=0;!s&&c<i.length;c++)s=o[i[c]+"Request"+a],u=o[i[c]+"Cancel"+a]||o[i[c]+"CancelRequest"+a];if(!s||!u){var l=0,p=0,d=[];s=function(e){if(0===d.length){var t=r(),n=Math.max(0,1e3/60-(t-l));l=n+t,setTimeout((function(){var e=d.slice(0);d.length=0;for(var t=0;t<e.length;t++)if(!e[t].cancelled)try{e[t].callback(l)}catch(e){setTimeout((function(){throw e}),0)}}),Math.round(n))}return d.push({handle:++p,callback:e,cancelled:!1}),p},u=function(e){for(var t=0;t<d.length;t++)d[t].handle===e&&(d[t].cancelled=!0)}}e.exports=function(e){return s.call(o,e)},e.exports.cancel=function(){u.apply(o,arguments)},e.exports.polyfill=function(e){e||(e=o),e.requestAnimationFrame=s,e.cancelAnimationFrame=u}}).call(this,n(4))},,function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return C}));var r=n(1),o=n.n(r),i=function(e){return new RegExp(/<[a-z][\s\S]*>/i).test(e)},a=function(e){var t=document.createElement("div");return t.innerHTML=e,t.childNodes},s=function(e,t){return Math.floor(Math.random()*(t-e+1))+e},u=function(e){var t=document.createElement("style");t.appendChild(document.createTextNode(e)),document.head.appendChild(t)},c="TYPE_CHARACTER",l="REMOVE_CHARACTER",p="REMOVE_ALL",d="REMOVE_LAST_VISIBLE_NODE",f="PAUSE_FOR",v="CALL_FUNCTION",h="ADD_HTML_TAG_ELEMENT",m="CHANGE_DELETE_SPEED",y="CHANGE_DELAY",g="CHANGE_CURSOR",w="PASTE_STRING",E="HTML_TAG",T="TEXT_NODE";function b(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),n.push.apply(n,r)}return n}function A(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};t%2?b(Object(n),!0).forEach((function(t){O(e,t,n[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):b(Object(n)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))}))}return e}function S(e){return function(e){if(Array.isArray(e)){for(var t=0,n=new Array(e.length);t<e.length;t++)n[t]=e[t];return n}}(e)||function(e){if(Symbol.iterator in Object(e)||"[object Arguments]"===Object.prototype.toString.call(e))return Array.from(e)}(e)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}()}function _(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function O(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}var C=function(){function e(t,n){var u=this;if(function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),O(this,"state",{cursorAnimation:null,lastFrameTime:null,pauseUntil:null,eventQueue:[],eventLoop:null,eventLoopPaused:!1,reverseCalledEvents:[],calledEvents:[],visibleNodes:[],initialOptions:null,elements:{container:null,wrapper:document.createElement("span"),cursor:document.createElement("span")}}),O(this,"options",{strings:null,cursor:"|",delay:"natural",deleteSpeed:"natural",loop:!1,autoStart:!1,devMode:!1,skipAddStyles:!1,wrapperClassName:"Typewriter__wrapper",cursorClassName:"Typewriter__cursor",stringSplitter:null}),O(this,"setupWrapperElement",(function(){u.state.elements.wrapper.className=u.options.wrapperClassName,u.state.elements.cursor.className=u.options.cursorClassName,u.state.elements.cursor.innerHTML=u.options.cursor,u.state.elements.container.innerHTML="",u.state.elements.container.appendChild(u.state.elements.wrapper),u.state.elements.container.appendChild(u.state.elements.cursor)})),O(this,"start",(function(){return u.state.eventLoopPaused=!1,u.runEventLoop(),u})),O(this,"pause",(function(){return u.state.eventLoopPaused=!0,u})),O(this,"stop",(function(){return u.state.eventLoop&&(Object(r.cancel)(u.state.eventLoop),u.state.eventLoop=null),u})),O(this,"pauseFor",(function(e){return u.addEventToQueue(f,{ms:e}),u})),O(this,"typeOutAllStrings",(function(){return"string"==typeof u.options.strings?(u.typeString(u.options.strings).pauseFor(1500),u):(u.options.strings.forEach((function(e){u.typeString(e).pauseFor(1500).deleteAll()})),u)})),O(this,"typeString",(function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;if(i(e))return u.typeOutHTMLString(e,t);if(e){var n=u.options||{},r=n.stringSplitter,o="function"==typeof r?r(e):e.split("");u.typeCharacters(o,t)}return u})),O(this,"pasteString",(function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return i(e)?u.typeOutHTMLString(e,t,!0):(e&&u.addEventToQueue(w,{character:e,node:t}),u)})),O(this,"typeOutHTMLString",(function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,n=arguments.length>2?arguments[2]:void 0,r=a(e);if(r.length>0)for(var o=0;o<r.length;o++){var i=r[o],s=i.innerHTML;i&&3!==i.nodeType?(i.innerHTML="",u.addEventToQueue(h,{node:i,parentNode:t}),n?u.pasteString(s,i):u.typeString(s,i)):i.textContent&&(n?u.pasteString(i.textContent,t):u.typeString(i.textContent,t))}return u})),O(this,"deleteAll",(function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"natural";return u.addEventToQueue(p,{speed:e}),u})),O(this,"changeDeleteSpeed",(function(e){if(!e)throw new Error("Must provide new delete speed");return u.addEventToQueue(m,{speed:e}),u})),O(this,"changeDelay",(function(e){if(!e)throw new Error("Must provide new delay");return u.addEventToQueue(y,{delay:e}),u})),O(this,"changeCursor",(function(e){if(!e)throw new Error("Must provide new cursor");return u.addEventToQueue(g,{cursor:e}),u})),O(this,"deleteChars",(function(e){if(!e)throw new Error("Must provide amount of characters to delete");for(var t=0;t<e;t++)u.addEventToQueue(l);return u})),O(this,"callFunction",(function(e,t){if(!e||"function"!=typeof e)throw new Error("Callbak must be a function");return u.addEventToQueue(v,{cb:e,thisArg:t}),u})),O(this,"typeCharacters",(function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;if(!e||!Array.isArray(e))throw new Error("Characters must be an array");return e.forEach((function(e){u.addEventToQueue(c,{character:e,node:t})})),u})),O(this,"removeCharacters",(function(e){if(!e||!Array.isArray(e))throw new Error("Characters must be an array");return e.forEach((function(){u.addEventToQueue(l)})),u})),O(this,"addEventToQueue",(function(e,t){var n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];return u.addEventToStateProperty(e,t,n,"eventQueue")})),O(this,"addReverseCalledEvent",(function(e,t){var n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=u.options.loop;return r?u.addEventToStateProperty(e,t,n,"reverseCalledEvents"):u})),O(this,"addEventToStateProperty",(function(e,t){var n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0,o={eventName:e,eventArgs:t||{}};return u.state[r]=n?[o].concat(S(u.state[r])):[].concat(S(u.state[r]),[o]),u})),O(this,"runEventLoop",(function(){u.state.lastFrameTime||(u.state.lastFrameTime=Date.now());var e=Date.now(),t=e-u.state.lastFrameTime;if(!u.state.eventQueue.length){if(!u.options.loop)return;u.state.eventQueue=S(u.state.calledEvents),u.state.calledEvents=[],u.options=A({},u.state.initialOptions)}if(u.state.eventLoop=o()(u.runEventLoop),!u.state.eventLoopPaused){if(u.state.pauseUntil){if(e<u.state.pauseUntil)return;u.state.pauseUntil=null}var n=S(u.state.eventQueue),r=n.shift(),i=0;if(!(t<=(i=r.eventName===d||r.eventName===l?"natural"===u.options.deleteSpeed?s(40,80):u.options.deleteSpeed:"natural"===u.options.delay?s(120,160):u.options.delay))){var a=r.eventName,b=r.eventArgs;switch(u.logInDevMode({currentEvent:r,state:u.state,delay:i}),a){case w:case c:var _=b.character,O=b.node,C=document.createTextNode(_);O?O.appendChild(C):u.state.elements.wrapper.appendChild(C),u.state.visibleNodes=[].concat(S(u.state.visibleNodes),[{type:T,node:C}]);break;case l:n.unshift({eventName:d,eventArgs:{removingCharacterNode:!0}});break;case f:var N=r.eventArgs.ms;u.state.pauseUntil=Date.now()+parseInt(N);break;case v:var L=r.eventArgs,M=L.cb,D=L.thisArg;M.call(D,{elements:u.state.elements});break;case h:var j=r.eventArgs,P=j.node,x=j.parentNode;x?x.appendChild(P):u.state.elements.wrapper.appendChild(P),u.state.visibleNodes=[].concat(S(u.state.visibleNodes),[{type:E,node:P,parentNode:x||u.state.elements.wrapper}]);break;case p:var k=u.state.visibleNodes,Q=b.speed,R=[];Q&&R.push({eventName:m,eventArgs:{speed:Q,temp:!0}});for(var H=0,F=k.length;H<F;H++)R.push({eventName:d,eventArgs:{removingCharacterNode:!1}});Q&&R.push({eventName:m,eventArgs:{speed:u.options.deleteSpeed,temp:!0}}),n.unshift.apply(n,R);break;case d:var I=r.eventArgs.removingCharacterNode;if(u.state.visibleNodes.length){var U=u.state.visibleNodes.pop(),q=U.type,G=U.node;G.parentNode.removeChild(G),q===E&&I&&n.unshift({eventName:d,eventArgs:{}})}break;case m:u.options.deleteSpeed=r.eventArgs.speed;break;case y:u.options.delay=r.eventArgs.delay;break;case g:u.options.cursor=r.eventArgs.cursor,u.state.elements.cursor.innerHTML=r.eventArgs.cursor}u.options.loop&&(r.eventName===d||r.eventArgs&&r.eventArgs.temp||(u.state.calledEvents=[].concat(S(u.state.calledEvents),[r]))),u.state.eventQueue=n,u.state.lastFrameTime=e}}})),!t)throw new Error("No container element was provided");if("string"==typeof t){var b=document.querySelector(t);if(!b)throw new Error("Could not find container element");this.state.elements.container=b}else this.state.elements.container=t;n&&(this.options=A({},this.options,{},n)),this.state.initialOptions=A({},this.options),this.init()}var t,n,b;return t=e,(n=[{key:"init",value:function(){this.setupWrapperElement(),this.addEventToQueue(g,{cursor:this.options.cursor},!0),this.addEventToQueue(p,null,!0),!window||window.___TYPEWRITER_JS_STYLES_ADDED___||this.options.skipAddStyles||(u(".Typewriter__cursor{-webkit-animation:Typewriter-cursor 1s infinite;animation:Typewriter-cursor 1s infinite;margin-left:1px}@-webkit-keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}100%{opacity:0}}"),window.___TYPEWRITER_JS_STYLES_ADDED___=!0),!0===this.options.autoStart&&this.options.strings&&this.typeOutAllStrings().start()}},{key:"logInDevMode",value:function(e){this.options.devMode&&console.log(e)}}])&&_(t.prototype,n),b&&_(t,b),e}()},function(e,t){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(e){"object"==typeof window&&(n=window)}e.exports=n},,,,,,,function(e,t,n){(function(t){(function(){var n,r,o,i,a,s;"undefined"!=typeof performance&&null!==performance&&performance.now?e.exports=function(){return performance.now()}:null!=t&&t.hrtime?(e.exports=function(){return(n()-a)/1e6},r=t.hrtime,i=(n=function(){var e;return 1e9*(e=r())[0]+e[1]})(),s=1e9*t.uptime(),a=i-s):Date.now?(e.exports=function(){return Date.now()-o},o=Date.now()):(e.exports=function(){return(new Date).getTime()-o},o=(new Date).getTime())}).call(this)}).call(this,n(12))},function(e,t){var n,r,o=e.exports={};function i(){throw new Error("setTimeout has not been defined")}function a(){throw new Error("clearTimeout has not been defined")}function s(e){if(n===setTimeout)return setTimeout(e,0);if((n===i||!n)&&setTimeout)return n=setTimeout,setTimeout(e,0);try{return n(e,0)}catch(t){try{return n.call(null,e,0)}catch(t){return n.call(this,e,0)}}}!function(){try{n="function"==typeof setTimeout?setTimeout:i}catch(e){n=i}try{r="function"==typeof clearTimeout?clearTimeout:a}catch(e){r=a}}();var u,c=[],l=!1,p=-1;function d(){l&&u&&(l=!1,u.length?c=u.concat(c):p=-1,c.length&&f())}function f(){if(!l){var e=s(d);l=!0;for(var t=c.length;t;){for(u=c,c=[];++p<t;)u&&u[p].run();p=-1,t=c.length}u=null,l=!1,function(e){if(r===clearTimeout)return clearTimeout(e);if((r===a||!r)&&clearTimeout)return r=clearTimeout,clearTimeout(e);try{r(e)}catch(t){try{return r.call(null,e)}catch(t){return r.call(this,e)}}}(e)}}function v(e,t){this.fun=e,this.array=t}function h(){}o.nextTick=function(e){var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)t[n-1]=arguments[n];c.push(new v(e,t)),1!==c.length||l||s(f)},v.prototype.run=function(){this.fun.apply(null,this.array)},o.title="browser",o.browser=!0,o.env={},o.argv=[],o.version="",o.versions={},o.on=h,o.addListener=h,o.once=h,o.off=h,o.removeListener=h,o.removeAllListeners=h,o.emit=h,o.prependListener=h,o.prependOnceListener=h,o.listeners=function(e){return[]},o.binding=function(e){throw new Error("process.binding is not supported")},o.cwd=function(){return"/"},o.chdir=function(e){throw new Error("process.chdir is not supported")},o.umask=function(){return 0}}]).default}));
+  </script>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="inner">
+            <span class="percentage"></span>
+        </div>
+        <!-- end inner -->
+    </div>
+    <!-- end preloader -->
+    <div class="transition-overlay"></div>
+
+
+
+
+
+
+    <div class="navigation-menu"  style="color: white !important;">
+        <div>
+            <!-- end side-menu -->
+            <h4 style="padding: 0 20% 2% 20%; text-align: left;">const <span>nyasha </span> = </h4>
+            <p style="padding: 1% 20%; text-align: center;">I am a software engineer and full-stack python and web developer
+          based in Zimbabwe, GW. I am currently studying my Bachelor's
+        degree in software engineering at Harare Institute of Technology.
+        I teach Python-focused programming tutorials on <a href="#">Youtube</a>.</p>
+        <p style="padding: 1% 20%; text-align: center;">Take a look at my <a href="#">resume</a> and my Github account. I'm
+        available for freelance work. You can contact me at <a href="#">allenzivanai@yahoo.com</a>.
+      </p>
+        <h3 style="padding: 3% 20%; text-align: left;">;</h3>
+
+
+
+              <a href="#back" class="back-btn" style="color: #2196f3 !important;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                CLICK ME!
+              </a>
+            </div>
+            <!-- end sides -->
+        </div>
+        <!-- end inner -->
+    </div>
+    <!-- end navigation-menu -->
+
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"> <a href="index.html"><img src="logos\real.png" alt="GreyMatter"></a></div>
+            <!-- end logo -->
+
+            <!-- end phone -->
+            <div class="main-menu">
+                <ul>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#servx">Services</a></li>
+                </ul>
+            </div>
+            <!-- end main-menu -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="burger">
+                    <svg id="burger-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <title>Show / Hide Navigation</title>
+                        <rect class="burger-svg__base" width="50" height="50" />
+                        <g class="burger-svg__bars">
+                            <rect class="burger-svg__bar burger-svg__bar-1" x="14" y="18" width="22" height="2" />
+                            <rect class="burger-svg__bar burger-svg__bar-2" x="14" y="24" width="22" height="2" />
+                            <rect class="burger-svg__bar burger-svg__bar-3" x="14" y="30" width="22" height="2" />
+                        </g>
+                    </svg>
+                </div>
+                <!-- end burger -->
+            </div>
+            <!-- end hamburger-menu -->
+        </nav>
+        <!-- end navbar -->
+
+
+
+
+        <div class="headlines">
+            <div class="container" style="min-height: 90vh; padding-bottom: 0px; ">
+              <style scoped>
+              .landing-text {
+                font-size: 6vw;
+                position: absolute;
+                bottom: 60vh;
+                left: 10vw;
+              }
+              @media (max-width: 1999px) {
+                .landing-text {
+                  font-size: 10vw;
+                  position: absolute;
+                  bottom: 10vh;
+                  left: 5vw;
+                }
+                </style>
+
+                <h1 class="wow fadeInUp landing-text" id="landing_text">
+                <span class="Typewriter__wrapper">
+                    <strong>
+                      "I"
+                      "w"
+                      "r"
+                      "i"
+                      "t"
+                      "e"
+                      <br>
+                      <span style="color: red;">
+                      "b"
+                      "e"
+                      "a"
+                      "u"
+                      "t"
+                      "i"
+                      "f"
+                      "u"
+                      "l"
+                    </span>
+                      "c"
+                      "o"
+                      "d"
+                      "e"
+                      "."
+                    </strong>
+                  </span>
+                  <span class="Typewriter__cursor">|</span>
+                </h1>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end headlines -->
+
+    <section class="works">
+
+        <div class="container">
+
+        <div class="row">
+        <ul>
+        <li>
+          <div class"titles">
+            <h2>About Me</h2>
+
+          </div>
+
+          <div class="custom-btn" id="back"><a >Click Me!<span></span> <i></i></a></div>
+          <!-- end custom-btn -->
+
+        </li>
+        <li>
+        <div class="col-12" >
+        <img src="IMG_5188.PNG" alt="me" id="myself">
+        </div>
+        </li>
+        <li style="padding: 0; margin: 0;">
+
+        <div class="par-skills">
+          <div class="skills col-12">
+             <h2>My Skills</h2>
+             <ul>
+               <li></li><h5>Python<span class="bar"><span class="python"></span></span></h5>
+               <li></li><h5>JavaScript<span class="bar"><span class="js"></span></span></h5>
+               <li></li><h5>jQuery<span class="bar"><span class="jq"></span></span></h5>
+               <li></li><h5>HTML5<span class="bar"><span class="html"></span></span></h5>
+               <li></li><h5>CSS3<span class="bar"><span class="css"></span></span></h5>
+               <li></li><h5>C#<span class="bar"><span class="cs"></span></span></h5>
+               <li></li><h5>C++<span class="bar"><span class="cpp"></span></span></h5>
+               <li></li><h5>C<span class="bar"><span class="c"></span></span></h5>
+               <li></li><h5>Kotlin<span class="bar"><span class="kotlin"></span></span></h5>
+               <li></li><h5>Java<span class="bar"><span class="java"></span></span></h5>
+
+             </ul>
+
+           </div>
+
+        </div>
+        </li>
+
+            <li>
+                <div class="titles" id="Portfolio">
+
+                    <h2>Portfolio</h2>
+                    <p>I focus on building cutting edge technology solutions for industry leaders around the world. With simple user-facing interfaces, which is my career's Mantra.</p>
+
+                </div>
+                <!-- end titles -->
+            </li>
+            <li>
+                <div class="project-box cod" >
+                    <figure class="project-image reveal-effect masker wow"> <a href="RESOURCES\figma.PNG" data-fancybox><img src="RESOURCES\figma.PNG"></a> </figure>
+                    <div class="project-content">
+                        <h3><a href="RESOURCES\figma.PNG" data-fancybox>Figma</a></h3>
+                        <small>Blockchain, Mobile Development — Social Network</small>
+                    </div>
+                    <!-- end project-content -->
+                </div>
+                <!-- end project-box -->
+            </li>
+            <li>
+                <div class="project-box">
+                    <figure class="project-image reveal-effect masker wow"> <a href="RESOURCES\jackhammer.PNG" data-fancybox><img src="RESOURCES\jackhammer.PNG" alt="Image"></a> </figure>
+                    <div class="project-content">
+                        <h3><a href="RESOURCES\jackhammer.PNG" data-fancybox>jackhammer Construction</a></h3>
+                        <small><i class="fa fa-etsy" aria-hidden="true"></i>web development, </small>
+                    </div>
+                    <!-- end project-content -->
+                </div>
+                <!-- end project-box -->
+            </li>
+            <li>
+                <div class="project-box">
+                    <figure class="project-image reveal-effect masker wow"> <a href="RESOURCES\stripe.PNG" data-fancybox><img src="RESOURCES\stripe.PNG" alt="Image"></a> </figure>
+                    <div class="project-content">
+                        <h3><a href="RESOURCES\stripe.PNG" data-fancybox>Stripe</a></h3>
+                        <small>Web Dev, IAAS —  Platform</small>
+                    </div>
+                    <!-- end project-content -->
+                </div>
+                <!-- end project-box -->
+            </li>
+            <li>
+                <div class="project-box">
+                    <figure class="project-image reveal-effect masker wow"> <a href="RESOURCES\Greyuplabs.PNG" data-fancybox><img src="RESOURCES\Greyuplabs.PNG" alt="Image"> </a></figure>
+                    <div class="project-content">
+                        <h3><a href="RESOURCES\Greyuplabs.PNG" data-fancybox>Greyup labs</a></h3>
+                        <small>Consultancy, DEVSECOPS — Mobile App, SAAS Dashboard</small>
+                    </div>
+                    <!-- end project-content -->
+                </div>
+                <!-- end project-box -->
+            </li>
+        </ul>
+    </div>
+        </div>
+
+
+        <!-- end container -->
+    </section>
+    <!-- end works -->
+    <section class="featured-services" data-color="dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="titles" id="servx">
+                        <h6>FEATURED SERVICES</h6>
+                        <p>I build robust software solutions that easily scale having exceptional user experience design. By focusing only on those technologies that I understand the most and never reinventing the wheel.</p>
+                    </div>
+                    <!-- end titles -->
+                </div>
+                <!-- end col-12 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>01</span>
+                            <h4>CONSULTANCY</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>02</span>
+                            <h4>CYBER SECURITY</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>03</span>
+                            <h4>WEB DEVELOPMENT</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>04</span>
+                            <h4>DEVSECOPS</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>05</span>
+                            <h4>MOBILE DEVELOPMENT</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>06</span>
+                            <h4>AI & ML</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/FAVI.jfif" alt="Image">
+                        <figcaption>
+                            <span>07</span>
+                            <h4>CLOUD INFRASTRUCTURE</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <figure class="reveal-effect masker wow"> <img src="RESOURCES/10-512.png" alt="Image">
+                        <figcaption>
+                            <span>08</span>
+                            <h4>BLOCKCHAIN</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end col-3 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    <section class="logos">
+        <div class="container">
+            <div class="titles">
+                <h6>SELECTED CLIENTS</h6>
+                <p>Here are some wonderful folks I have had the pleasure of working with.</p>
+            </div>
+            <!-- end titles -->
+            <ul class="wow fadeInUp">
+                <li>
+                    <figure><img src="logos\AG.png" alt="Metal"></figure>
+                </li>
+                <li>
+                    <figure><img src="logos\bak.png" alt="bak"></figure>
+                </li>
+                <li>
+                    <figure><img src="logos\jamalu.png" alt="jamalu"></figure>
+                </li>
+                <li>
+                    <figure><img src="logos\stripe.png" alt="stripe"></figure>
+                </li>
+                <li>
+                    <figure><img src="logos\tsl.png" alt="tsl"></figure>
+                </li>
+                <li>
+                    <figure><img src="logos\main.png" alt="GreyMatter"></figure>
+                </li>
+
+            </ul>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end logos -->
+
+    <section class="work-with-me" data-color="dark">
+        <div class="container wow fadeInUp">
+        <h6>Considering me for your next project?
+            Let's talk!</h6>
+          <img src="IMG_E5192.JPG" alt="Gigo">
+          <p>software engineer, web and python developer</p>
+          <p>
+          <span><span><a href="allenzivanai@yahoo.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
+          <span><a href="https://www.youtube.com/channel/UCzyapeleiKEDdXDvZFiSJfg"><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
+          <span><a href="https://github.com/Eng-Zivanai?tab=repositories"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+          <span><a href="https://dribbble.com/GreyMatter"><i class="fa fa-dribbble" aria-hidden="true"></i></a></span>
+          <span><a href="https://www.fiverr.com/my_profile"><i class="fa fa-fiverr" aria-hidden="true"></i></a></span>
+          <span><a href="https://medium.com/@allenzivanai"><i class="fa fa-medium" aria-hidden="true"></i></a></span>
+          </p>
+
+
+        </div>
+
+    </section>
+    <!-- end work-with-me -->
+
+    <footer>Copyright (c) 2020 GreyMatter All Rights Reserved.</footer>
+
+
+
+    <script>
+    var app = document.getElementById('landing_text');
+
+    var typewriter = new Typewriter(app, {
+      loop: false,
+      delay: 90,
+    });
+
+    typewriter
+      .pauseFor(3000)
+      .typeString('<strong> I write <br> <span style="color: red;">beautiful</span> code.</strong>')
+      .start();
+    </script>
+
+    <!-- JS FILES -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src='js/TweenMax.min.js'></script>
+    <script src='js/fancybox.min.js'></script>
+    <script src='js/wow.min.js'></script>
+    <script src='js/scripts.js'></script>
+</body>
+
+</html>
